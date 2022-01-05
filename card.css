@@ -150,7 +150,8 @@ section.container {
   font-size: 0.5rem;
   letter-spacing: 0.2rem;
   transform: rotate(90deg);
-  margin-bottom: 190px;
+  margin-bottom: 150px;
+  text-transform: uppercase;
 }
 
 .card-footer-scroll h5::after {
