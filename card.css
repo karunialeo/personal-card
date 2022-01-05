@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --lightgray: #c4c4c4;
+  --gray: #858585;
+  --white: #edf1fd;
+  --red: #ff023b;
+}
+
+.red {
+  color: var(--red);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--gray);
+  min-height: 100vh;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1rem 0;
+  letter-spacing: 0.15rem;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.card-content h5 {
+  margin: 0.5rem 0;
+  letter-spacing: 0.4rem;
+}
+
+.card-content h5::before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  margin-bottom: 4px;
+  margin-right: 1rem;
+  width: 4rem;
+  background: var(--lightgray);
+  z-index: 1;
+}
+
+p {
+  font-size: 0.8rem;
+  margin: 10px 0;
+  margin-bottom: 3rem;
+  line-height: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-link {
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--red);
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px var(--lightgray);
+  transition: 0.3s ease;
+}
+
+.button-link:hover {
+  color: var(--red);
+  background-color: var(--white);
+}
+
+section.container {
+  display: flex;
+  background: url(assets/background.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position-x: 8vw;
+  background-position-y: 1.8vw;
+  width: 80%;
+  height: 540px;
+  border: red;
+  box-shadow: 0 0 30px var(--lightgray);
+}
+
+.card-body {
+  width: 100%;
+}
+
+/* Navbar CSS */
+
+.card-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  box-sizing: border-box;
+}
+
+.card-navbar li {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.card-nav-center li {
+  padding: 0 0.9rem;
+}
+
+.card-nav-right li {
+  padding: 0 0.4rem;
+}
+
+/* Content CSS */
+
+.card-content {
+  height: max-content;
+  width: 44%;
+  padding: 5rem 0 0 10rem;
+  /* box-sizing: border-box; */
+}
+
+/* Footer Links CSS */
+.card-footer {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer-links {
+  font-size: 1.2rem;
+  margin-left: 3rem;
+  /* margin-top: 6rem; */
+}
+
+.card-footer-links a {
+  margin: 0 0.5rem;
+}
+
+.card-footer-scroll h5 {
+  font-size: 0.5rem;
+  letter-spacing: 0.2rem;
+  transform: rotate(90deg);
+  margin-bottom: 190px;
+}
+
+.card-footer-scroll h5::after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  margin-bottom: 1px;
+  margin-left: 1rem;
+  width: 4rem;
+  background: var(--lightgray);
+  z-index: 1;
+}
